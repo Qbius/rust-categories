@@ -1,5 +1,8 @@
 mod futils;
-mod types;
+mod writer;
+mod optional;
+mod swap;
+
 use futils::compose;
 use futils::id;
 
