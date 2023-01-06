@@ -1,10 +1,10 @@
 
-enum Either<A, B> {
+pub enum Either<A, B> {
     Left(A),
     Right(B),
 }
 
-type Maybe<A> = Either<(), A>;
+pub type Maybe<A> = Either<(), A>;
 fn either_to_option<A>(e: Maybe<A>) -> Option<A> {
     match e {
         Maybe::<A>::Left(()) => None,
@@ -101,3 +101,4 @@ fn listing() {
     let list = L::cons("aka".to_owned(), L::cons("pulko".to_owned(), L::Nil));
     println!("{}", list.to_string());
 }
+
