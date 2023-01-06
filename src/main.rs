@@ -1,4 +1,5 @@
 mod futils;
+mod types;
 use futils::compose;
 use futils::id;
 
